@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.project.field_project_categroy
     - field.field.node.project.field_project_cover_image
     - field.field.node.project.field_project_description
     - field.field.node.project.field_project_owner
@@ -18,6 +19,14 @@ targetEntityType: node
 bundle: project
 mode: default
 content:
+  field_project_categroy:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
   field_project_cover_image:
     type: image
     label: above

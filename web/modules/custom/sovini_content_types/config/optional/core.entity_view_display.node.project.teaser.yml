@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_project_categroy
     - field.field.node.project.field_project_cover_image
     - field.field.node.project.field_project_description
     - field.field.node.project.field_project_owner
@@ -23,6 +24,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_project_categroy: true
   field_project_cover_image: true
   field_project_description: true
   field_project_owner: true
