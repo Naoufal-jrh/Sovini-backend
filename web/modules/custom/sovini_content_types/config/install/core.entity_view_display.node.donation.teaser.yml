@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.donation.field_donation_amount
+    - field.field.node.donation.field_donation_owner_reference
+    - field.field.node.donation.field_donation_project_reference
+    - node.type.donation
+  module:
+    - user
+id: node.donation.teaser
+targetEntityType: node
+bundle: donation
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_donation_amount: true
+  field_donation_owner_reference: true
+  field_donation_project_reference: true

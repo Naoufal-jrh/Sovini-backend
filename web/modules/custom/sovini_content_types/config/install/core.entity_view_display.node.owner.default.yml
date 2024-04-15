@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.owner.field_owner_email
+    - field.field.node.owner.field_owner_firstname
+    - field.field.node.owner.field_owner_image
+    - field.field.node.owner.field_owner_lastname
+    - field.field.node.owner.field_owner_phone_number
+    - node.type.owner
+  module:
+    - image
+    - sms_phone_number
+    - user
+id: node.owner.default
+targetEntityType: node
+bundle: owner
+mode: default
+content:
+  field_owner_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_owner_firstname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_owner_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_owner_lastname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_owner_phone_number:
+    type: sms_phone_number_international
+    label: above
+    settings:
+      as_link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

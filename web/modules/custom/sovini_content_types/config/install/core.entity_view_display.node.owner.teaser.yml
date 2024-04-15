@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.owner.field_owner_email
+    - field.field.node.owner.field_owner_firstname
+    - field.field.node.owner.field_owner_image
+    - field.field.node.owner.field_owner_lastname
+    - field.field.node.owner.field_owner_phone_number
+    - node.type.owner
+  module:
+    - user
+id: node.owner.teaser
+targetEntityType: node
+bundle: owner
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_owner_email: true
+  field_owner_firstname: true
+  field_owner_image: true
+  field_owner_lastname: true
+  field_owner_phone_number: true

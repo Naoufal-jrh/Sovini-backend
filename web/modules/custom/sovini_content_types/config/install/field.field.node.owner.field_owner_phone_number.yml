@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_owner_phone_number
+    - node.type.owner
+  module:
+    - sms_phone_number
+id: node.owner.field_owner_phone_number
+field_name: field_owner_phone_number
+entity_type: node
+bundle: owner
+label: 'Owner Phone Number'
+description: m
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_countries:
+    DZ: DZ
+    BE: BE
+    BR: BR
+    VI: VI
+    AE: AE
+    GB: GB
+    US: US
+  allowed_types:
+    2: 2
+  extension_field: true
+  verify: none
+  message: |-
+    Your verification code from !site_name:
+    !code
+field_type: sms_phone_number

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_project_cover_image
+    - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_owner
+    - field.field.node.project.field_project_raised_amount
+    - field.field.node.project.field_project_requested_amount
+    - field.field.node.project.field_project_title
+    - node.type.project
+  module:
+    - user
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_project_cover_image: true
+  field_project_description: true
+  field_project_owner: true
+  field_project_raised_amount: true
+  field_project_requested_amount: true
+  field_project_title: true
