@@ -208,6 +208,18 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'drupal/admin_toolbar' => array(
+            'pretty_version' => '3.4.2',
+            'version' => '3.4.2.0',
+            'reference' => '3.4.2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/admin_toolbar',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+>>>>>>> 1220932a (devel setup + admin toolbar)
         'drupal/config_update' => array(
             'pretty_version' => '2.0.0-alpha3',
             'version' => '2.0.0.0-alpha3',
