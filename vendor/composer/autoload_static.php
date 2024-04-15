@@ -483,13 +483,8 @@ class ComposerStaticInit707f7590d632e07d7add8405a30a9cb8
         ),
         'Doctrine\\Common\\' => 
         array (
-<<<<<<< HEAD
             0 => __DIR__ . '/..' . '/doctrine/event-manager/src',
             1 => __DIR__ . '/..' . '/doctrine/common/src',
-=======
-            0 => __DIR__ . '/..' . '/doctrine/common/src',
-            1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
->>>>>>> 1220932a (devel setup + admin toolbar)
         ),
         'Dflydev\\DotAccessData\\' => 
         array (
