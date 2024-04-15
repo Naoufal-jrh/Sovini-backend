@@ -1,1 +1,17 @@
+excluded:
+  - field.storage.node.field_donation_amount
+  - field.storage.node.field_donation_owner_reference
+  - field.storage.node.field_donation_project_reference
+  - field.storage.node.field_owner_email
+  - field.storage.node.field_owner_firstname
+  - field.storage.node.field_owner_image
+  - field.storage.node.field_owner_lastname
+  - field.storage.node.field_owner_phone_number
+  - field.storage.node.field_project_cover_image
+  - field.storage.node.field_project_description
+  - field.storage.node.field_project_owner
+  - field.storage.node.field_project_raised_amount
+  - field.storage.node.field_project_requested_amount
+  - field.storage.node.field_project_title
+  - filter.format.full_html
 required: true
